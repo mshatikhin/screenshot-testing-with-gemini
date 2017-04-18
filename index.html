@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Shower Presentation Engine</title>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="shower/themes/ribbon/styles/screen-16x10.css">
+</head>
+<body class="shower list">
+
+<header class="caption">
+	<h1>Скриншотное тестирование с использованием gemini</h1>
+	<p>СКБ Контур 2017</p>
+</header>
+
+<section class="slide" id="cover">
+	<h2>Скриншотное тестирование с использованием gemini</h2>
+	<p>Автор <a href="http://">Михаил Шатихин</a></p>
+	<figure>
+		<img class="cover" src="pictures/cover.jpg" alt="Cover">
+	</figure>
+	<style>
+		#cover h2 {
+			margin: 250px 0 0;
+			color: #FFF;
+			text-align: center;
+			font-size: 70px;
+		}
+
+		#cover p {
+			margin: 10px 0 0;
+			text-align: center;
+			color: #FFF;
+			font-style: italic;
+			font-size: 20px;
+		}
+
+		#cover p a {
+			color: #FFF;
+		}
+	</style>
+</section>
+
+<section class="slide">
+	<h2>Потребности</h2>
+	<ul>
+		<li>Тратить меньше времени на ручное тестирование</li>
+		<li>Повысить надежность приложения</li>
+		<li>Избавиться от боли после рефакторинга верстки</li>
+	</ul>
+</section>
+
+<section class="slide">
+	<h2>Как хочется</h2>
+	<ul>
+		<li>Делать скриншоты в различных состояних</li>
+		<li>Сравнивать скриншоты между собой автоматически</li>
+		<li>Тестировать верстку в разных браузерах</li>
+	</ul>
+</section>
+
+<section class="slide">
+	<h2>Наш кейс</h2>
+	<p>Тестируем наши компоненты через песочницу (getstorybook.io)</p>
+	<p>Запускаем тесты на локальной машине разработчика</p>
+</section>
+
+<section class="slide">
+	<h2>Тестирование вручную</h2>
+	<p>Много рутинной работы</p>
+	<p>Человеческий фактор</p>
+</section>
+
+<section class="slide">
+	<h2>Тестирование автоматически</h2>
+	<ul>
+		<li>Быстрее чем руками</li>
+		<li>Избавляем себя от большой доли рутины</li>
+		<li>Надежнее</li>
+	</ul>
+</section>
+
+<section class="slide">
+	<h2 class="shout">Инструмент gemini</h2>
+</section>
+
+<section class="slide">
+	<h2>Возможности</h2>
+	<ul>
+		<li>Запуск тестов в разных браузерах (Chrome, Firefox, IE8+, Opera 12+)</li>
+		<li>Тестирование страницы по блокам</li>
+		<li>Возможность игнорировать лишнее</li>
+		<li>Богатое api</li>
+		<li>Удобный отчёт</li>
+		<li>Есть GUI</li>
+		<li>Есть plugin для React (gemini-react)</li>
+	</ul>
+</section>
+
+<section class="slide">
+	<h2>Ограничения</h2>
+	<ul>
+		<li>Работает через selenium (нужно запускать отдельно)</li>
+		<li>Скриншоты - не замена юнит-тестам</li>
+		<li>Нужно использовать статические данные</li>
+		<li>...</li>
+	</ul>
+</section>
+
+<section class="slide" id="picture">
+	<h2>Профит</h2>
+	<ul>
+		<li>При рефакторинге, нет боли (почти)</li>
+		<li>Скриншотное тестирование увлекательно</li>
+	</ul>
+</section>
+
+<section class="slide">
+	<h2>Ссылки</h2>
+	<ul>
+		<li><a href="https://github.com/gemini-testing/gemini">gemini-testing/gemini</a></li>
+		<li><a href="https://gemini-testing.github.io/">gemini-testing.github.io</a></li>
+		<li><a href="https://getstorybook.io/docs/react-storybook/testing/react-ui-testing">react-storybook/testing/react-ui-testing</a>
+		</li>
+		<li><a href="https://getstorybook.io/docs/react-storybook/testing/css-style-testing">react-storybook/testing/css-style-testing</a>
+		</li>
+		<li><a href="https://events.yandex.ru/lib/talks/4262/">Gemini: различные способы использования</a></li>
+		<li><a href="https://gist.github.com/cvrebert/adf91e429906a4d746cd">Другие инструменты CSS Regression
+			Testing</a></li>
+		<li><a href="https://github.com/mshatikhin/gemini-react-starter">Мой стартер для React приложений</a></li>
+	</ul>
+</section>
+
+<section class="slide">
+	<h2 class="shout">Спасибо</h2>
+</section>
+
+<section class="slide">
+	<h2>Вопросы?</h2>
+	<p>
+
+	</p>
+</section>
+
+<!--
+    To hide progress bar from entire presentation
+    just remove “progress” element.
+    -->
+<div class="progress"></div>
+<script src="shower/shower.min.js"></script>
+<!-- Copyright © 2015 Yours Truly, Famous Inc. -->
+<!-- Photos by John Carey, fiftyfootshadows.net -->
+</body>
+</html>
