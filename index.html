@@ -1,146 +1,228 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Shower Presentation Engine</title>
-	<meta charset="utf-8">
-	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="shower/themes/ribbon/styles/screen-16x10.css">
+    <title>Shower Presentation Engine</title>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="shower/themes/ribbon/styles/screen-16x10.css">
 </head>
 <body class="shower list">
 
 <header class="caption">
-	<h1>Скриншотное тестирование с использованием gemini</h1>
-	<p>СКБ Контур 2017</p>
+    <h1>Скриншотное тестирование с использованием gemini</h1>
+    <p>СКБ Контур 2017</p>
 </header>
 
 <section class="slide" id="cover">
-	<h2>Скриншотное тестирование с использованием gemini</h2>
-	<p>Автор <a href="http://">Михаил Шатихин</a></p>
-	<figure>
-		<img class="cover" src="pictures/cover.jpg" alt="Cover">
-	</figure>
-	<style>
-		#cover h2 {
-			margin: 250px 0 0;
-			color: #FFF;
-			text-align: center;
-			font-size: 70px;
-		}
-
-		#cover p {
-			margin: 10px 0 0;
-			text-align: center;
-			color: #FFF;
-			font-style: italic;
-			font-size: 20px;
-		}
-
-		#cover p a {
-			color: #FFF;
-		}
-	</style>
+    <h2>Скриншотное тестирование с использованием gemini</h2>
+    <figure>
+        <img class="cover" src="pictures/cover.jpg" alt="Cover">
+    </figure>
+    <style>
+        #cover h2 {
+            margin: 250px 0 0;
+            color: #FFF;
+            text-align: center;
+            font-size: 70px;
+        }
+    </style>
 </section>
 
 <section class="slide">
-	<h2>Потребности</h2>
-	<ul>
-		<li>Тратить меньше времени на ручное тестирование</li>
-		<li>Повысить надежность приложения</li>
-		<li>Избавиться от боли после рефакторинга верстки</li>
-	</ul>
+    <h2 class="shout">Острота зрения</h2>
 </section>
 
 <section class="slide">
-	<h2>Как хочется</h2>
-	<ul>
-		<li>Делать скриншоты в различных состояних</li>
-		<li>Сравнивать скриншоты между собой автоматически</li>
-		<li>Тестировать верстку в разных браузерах</li>
-	</ul>
+    <img src="pictures/tab2.jpg" class="cover"/>
 </section>
 
 <section class="slide">
-	<h2>Наш кейс</h2>
-	<p>Тестируем наши компоненты через песочницу (getstorybook.io)</p>
-	<p>Запускаем тесты на локальной машине разработчика</p>
+    <img src="pictures/tab_diff_2.jpg" class="cover"/>
 </section>
 
 <section class="slide">
-	<h2>Тестирование вручную</h2>
-	<p>Много рутинной работы</p>
-	<p>Человеческий фактор</p>
+    <h2>Пирамида тестирования</h2>
+    <ul>
+        <li>e2e</li>
+        <li>css/style</li>
+        <li>integration</li>
+        <li>unit</li>
+        <li>structure</li>
+        <li>type checking</li>
+    </ul>
 </section>
 
 <section class="slide">
-	<h2>Тестирование автоматически</h2>
-	<ul>
-		<li>Быстрее чем руками</li>
-		<li>Избавляем себя от большой доли рутины</li>
-		<li>Надежнее</li>
-	</ul>
+    <h2>Потребности</h2>
+    <ul>
+        <li>Повысить надежность приложения</li>
+        <li>Тратить меньше времени на ручное тестирование</li>
+        <li>Избавиться от боли после рефакторинга верстки</li>
+        <li>После обновления retail-ui быть спокойным</li>
+    </ul>
 </section>
 
 <section class="slide">
-	<h2 class="shout">Инструмент gemini</h2>
+    <h2>Как хочется</h2>
+    <ul>
+        <li>Делать скриншоты в различных состояних</li>
+        <li>Сравнивать скриншоты между собой автоматически</li>
+        <li>Тестировать верстку в разных браузерах</li>
+    </ul>
 </section>
 
 <section class="slide">
-	<h2>Возможности</h2>
-	<ul>
-		<li>Запуск тестов в разных браузерах (Chrome, Firefox, IE8+, Opera 12+)</li>
-		<li>Тестирование страницы по блокам</li>
-		<li>Возможность игнорировать лишнее</li>
-		<li>Богатое api</li>
-		<li>Удобный отчёт</li>
-		<li>Есть GUI</li>
-		<li>Есть plugin для React (gemini-react)</li>
-	</ul>
+    <h2>Наш кейс</h2>
+    <ul>
+        <li>Тестируем компоненты через песочницу storybook</li>
+        <li>Не тестируем страницы целиком</li>
+    </ul>
 </section>
 
 <section class="slide">
-	<h2>Ограничения</h2>
-	<ul>
-		<li>Работает через selenium (нужно запускать отдельно)</li>
-		<li>Скриншоты - не замена юнит-тестам</li>
-		<li>Нужно использовать статические данные</li>
-		<li>...</li>
-	</ul>
+    <h2>Тестирование вручную</h2>
+    <ul>
+        <li>Много рутинной работы</li>
+        <li>Человеческий фактор</li>
+    </ul>
+</section>
+
+<section class="slide">
+    <img src="pictures/eyes.gif" width="500" class="cover"/>
+</section>
+
+<section class="slide">
+    <h2>Тестирование автоматически</h2>
+    <ul>
+        <li>Быстрее</li>
+        <li>Избавляем себя от большой доли рутины</li>
+        <li>Надежнее</li>
+    </ul>
+</section>
+
+<section class="slide">
+    <h2 class="shout">Инструмент gemini</h2>
+</section>
+
+<section class="slide">
+    <h2>Возможности</h2>
+    <ul>
+        <li>Запуск тестов в разных браузерах (Chrome, Firefox, IE8+, Opera 12+)</li>
+        <li>Тестирование страницы по блокам</li>
+        <li>Возможность игнорировать лишнее</li>
+        <li>Богатое api</li>
+        <li>Удобный отчёт</li>
+        <li>Есть GUI</li>
+        <li>Есть plugin для React (gemini-react)</li>
+    </ul>
+</section>
+
+<section class="slide">
+    <h2 class="shout">Пример конфига</h2>
+</section>
+
+<section class="slide">
+    <pre>
+        <code>{</code>
+        <code>  rootUrl: "http://localhost:6006/",</code>
+        <code>  browsers: {</code>
+        <code>    chrome: {</code>
+        <code>      desiredCapabilities: {</code>
+        <code>        browserName: "chrome"</code>
+        <code>      }</code>
+        <code>    }</code>
+        <code>  }</code>
+        <code>}</code>
+    </pre>
+</section>
+
+<section class="slide">
+    <h2 class="shout">Пример теста</h2>
+</section>
+
+<section class="slide">
+    <h2>Название теста</h2>
+    <pre>
+        <code>gemini.suite(<mark>'test'</mark>, (suite) => {</code>
+        <code>  suite.setUrl('/')</code>
+        <code>    .setCaptureElements('.test__root')</code>
+        <code>    .capture('plain');</code>
+        <code>});</code>
+    </pre>
+</section>
+
+<section class="slide">
+    <h2>URL — адрес теста</h2>
+    <pre>
+        <code>gemini.suite('test', (suite) => {</code>
+        <code>  suite.setUrl(<mark>'/'</mark>)</code>
+        <code>    .setCaptureElements('.test__root')</code>
+        <code>    .capture('plain');</code>
+        <code>});</code>
+    </pre>
+</section>
+
+<section class="slide">
+    <h2>Селектор теста</h2>
+    <pre>
+        <code>gemini.suite('test', (suite) => {</code>
+        <code>  suite.setUrl('/')</code>
+        <code>    .setCaptureElements(<mark>'.test__root'</mark>)</code>
+        <code>    .capture('plain');</code>
+        <code>});</code>
+    </pre>
+</section>
+
+<section class="slide">
+    <h2 class="shout">Есть один нюанс</h2>
+</section>
+
+<section class="slide">
+    <h2>Ограничения</h2>
+    <ul>
+        <li>Работает через selenium (нужно запускать отдельно)</li>
+        <li>Скриншоты — не замена другим тестам</li>
+        <li>Запуск на разных машинах приводит к разным результатам</li>
+        <li>Нужно использовать статические данные</li>
+    </ul>
 </section>
 
 <section class="slide" id="picture">
-	<h2>Профит</h2>
-	<ul>
-		<li>При рефакторинге, нет боли (почти)</li>
-		<li>Скриншотное тестирование увлекательно</li>
-	</ul>
+    <h2>Профит использования</h2>
+    <ul>
+        <li>При обновлениях оперативно видите что поменялось</li>
+        <li>Повышается надежность и уверенность</li>
+        <li>При рефакторинге, нет боли (почти)</li>
+        <li>Скриншотное тестирование увлекательно</li>
+    </ul>
 </section>
 
 <section class="slide">
-	<h2>Ссылки</h2>
-	<ul>
-		<li><a href="https://github.com/gemini-testing/gemini">gemini-testing/gemini</a></li>
-		<li><a href="https://gemini-testing.github.io/">gemini-testing.github.io</a></li>
-		<li><a href="https://getstorybook.io/docs/react-storybook/testing/react-ui-testing">react-storybook/testing/react-ui-testing</a>
-		</li>
-		<li><a href="https://getstorybook.io/docs/react-storybook/testing/css-style-testing">react-storybook/testing/css-style-testing</a>
-		</li>
-		<li><a href="https://events.yandex.ru/lib/talks/4262/">Gemini: различные способы использования</a></li>
-		<li><a href="https://gist.github.com/cvrebert/adf91e429906a4d746cd">Другие инструменты CSS Regression
-			Testing</a></li>
-		<li><a href="https://github.com/mshatikhin/gemini-react-starter">Мой стартер для React приложений</a></li>
-	</ul>
+    <h2>Ссылки</h2>
+    <ul>
+        <li><a href="https://github.com/gemini-testing/gemini">gemini-testing/gemini</a></li>
+        <li><a href="https://gemini-testing.github.io/">gemini-testing.github.io</a></li>
+        <li><a href="https://getstorybook.io/docs/react-storybook/testing/react-ui-testing">react-storybook/testing/react-ui-testing</a>
+        </li>
+        <li><a href="https://getstorybook.io/docs/react-storybook/testing/css-style-testing">react-storybook/testing/css-style-testing</a>
+        </li>
+        <li><a href="https://events.yandex.ru/lib/talks/4262/">Gemini: различные способы использования</a></li>
+        <li><a href="https://gist.github.com/cvrebert/adf91e429906a4d746cd">Другие инструменты CSS Regression
+            Testing</a></li>
+        <li><a href="https://github.com/mshatikhin/gemini-react-starter">Мой стартер для React приложений</a></li>
+    </ul>
 </section>
 
 <section class="slide">
-	<h2 class="shout">Спасибо</h2>
+    <h2 class="shout">Спасибо</h2>
 </section>
 
 <section class="slide">
-	<h2>Вопросы?</h2>
-	<p>
+    <h2>Вопросы?</h2>
+    <p>
 
-	</p>
+    </p>
 </section>
 
 <!--
