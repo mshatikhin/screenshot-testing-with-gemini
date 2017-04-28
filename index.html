@@ -30,6 +30,12 @@
 </section>
 
 <section class="slide">
+    <h2>Рассказ про проект</h2>
+    <p>Общая картина, обзор</p>
+    <p>Вставить картинки проекта</p>
+</section>
+
+<section class="slide">
     <h2 class="shout">Острота зрения</h2>
 </section>
 
@@ -44,75 +50,12 @@
 <section class="slide">
     <h2>Виды тестирования</h2>
     <ul>
-        <li>type checking <code>(typescript, flow)</code></li>
-    </ul>
-</section>
-
-<section class="slide">
-    <h2>Виды тестирования</h2>
-    <ul>
-        <li>type checking <code>(typescript, flow)</code></li>
-        <li>structure <code>(jest snapshot)</code></li>
-    </ul>
-</section>
-
-<section class="slide">
-    <h2>Виды тестирования</h2>
-    <ul>
-        <li>type checking <code>(typescript, flow)</code></li>
-        <li>structure <code>(jest snapshot)</code></li>
-        <li>unit <code>(jest)</code></li>
-    </ul>
-</section>
-
-<section class="slide">
-    <h2>Виды тестирования</h2>
-    <ul>
-        <li>type checking <code>(typescript, flow)</code></li>
-        <li>structure <code>(jest snapshot)</code></li>
-        <li>unit <code>(jest)</code></li>
-        <li>integration <code>(jest, enzyme)</code></li>
-    </ul>
-</section>
-
-<section class="slide">
-    <h2>Виды тестирования</h2>
-    <ul>
-        <li>type checking <code>(typescript, flow)</code></li>
-        <li>structure <code>(jest snapshot)</code></li>
-        <li>unit <code>(jest)</code></li>
-        <li>integration <code>(jest, enzyme)</code></li>
-        <li>css/style <code>(gemini, ...)</code></li>
-    </ul>
-</section>
-
-<section class="slide">
-    <h2>Виды тестирования</h2>
-    <ul>
-        <li>type checking <code>(typescript, flow)</code></li>
-        <li>structure <code>(jest snapshot)</code></li>
-        <li>unit <code>(jest)</code></li>
-        <li>integration <code>(jest, enzyme)</code></li>
-        <li>css/style <code>(gemini, ...)</code></li>
         <li>e2e <code>(nigthwatch, ...)</code></li>
-    </ul>
-</section>
-
-<section class="slide">
-    <h2 class="shout">Пирамида тестирования</h2>
-</section>
-
-<section class="slide">
-    <img src="pictures/piramide.001.jpeg" class="cover"/>
-</section>
-
-<section class="slide">
-    <h2>Потребности</h2>
-    <ul>
-        <li>Повысить надежность приложения</li>
-        <li>Тратить меньше времени на ручное тестирование</li>
-        <li>Избавиться от боли после рефакторинга верстки</li>
-        <li>После обновления retail-ui быть спокойным</li>
+        <li>css/style <code>(gemini, ...)</code></li>
+        <li>integration <code>(jest, enzyme)</code></li>
+        <li>unit <code>(jest)</code></li>
+        <li>structure <code>(jest snapshot)</code></li>
+        <li>type checking <code>(typescript, flow)</code></li>
     </ul>
 </section>
 
@@ -121,9 +64,19 @@
 </section>
 
 <section class="slide">
+    <h2>Потребности</h2>
+    <ul>
+        <li>Повысить надежность приложения</li>
+        <li>Тратить меньше времени на ручное тестирование</li>
+        <li>Избавиться от боли после рефакторинга верстки</li>
+        <li>После обновления "retail-ui" быть спокойным</li>
+    </ul>
+</section>
+
+<section class="slide">
     <h2>Как хочется</h2>
     <ul>
-        <li>Делать скриншоты в различных состояних</li>
+        <li>Делать скриншоты компонентов в различных состояних</li>
         <li>Сравнивать скриншоты между собой автоматически</li>
         <li>Тестировать верстку в разных браузерах</li>
     </ul>
@@ -132,7 +85,7 @@
 <section class="slide">
     <h2>Наш кейс</h2>
     <ul>
-        <li>Тестируем компоненты через песочницу storybook</li>
+        <li>Тестируем компоненты по отдельности</li>
         <li>Не тестируем страницы целиком</li>
     </ul>
 </section>
@@ -150,12 +103,11 @@
 </section>
 
 <section class="slide">
-    <h2>Тестирование автоматически</h2>
-    <ul>
-        <li>Быстрее</li>
-        <li>Избавляем себя от большой доли рутины</li>
-        <li>Надежнее</li>
-    </ul>
+    <h2>Почему webdiff нам не подходит</h2>
+    <p>...</p>
+    <p>...</p>
+    <p>...</p>
+    <p>...</p>
 </section>
 
 <section class="slide">
@@ -163,35 +115,30 @@
 </section>
 
 <section class="slide">
+    <h2>Ограничения</h2>
+    <ul>
+        <li>Работает через selenium (нужно запускать отдельно)</li>
+        <li>Запуск на разных машинах приводит к разным результатам</li>
+        <li>Необходимо использовать статические данные</li>
+    </ul>
+</section>
+
+<section class="slide">
     <h2>Возможности</h2>
     <ul>
-        <li>Запуск тестов в разных браузерах (Chrome, Firefox, IE8+, Opera 12+)</li>
+        <li>Возможность взаимодействовать с UI</li>
         <li>Тестирование страницы по блокам</li>
+        <li>Тесты пишутся на js</li>
         <li>Возможность игнорировать лишнее</li>
-        <li>Богатое api</li>
-        <li>Удобный отчёт</li>
+        <li>Удобный HTML отчёт</li>
         <li>Есть GUI</li>
+        <li>Запуск тестов в разных браузерах (Chrome, Firefox, IE8+, Opera 12+)</li>
         <li>Есть plugin для React (gemini-react)</li>
     </ul>
 </section>
 
 <section class="slide">
-    <h2 class="shout">Пример конфига</h2>
-</section>
-
-<section class="slide">
-    <pre>
-        <code>{</code>
-        <code>  rootUrl: "http://localhost:6006/",</code>
-        <code>  browsers: {</code>
-        <code>    chrome: {</code>
-        <code>      desiredCapabilities: {</code>
-        <code>        browserName: "chrome"</code>
-        <code>      }</code>
-        <code>    }</code>
-        <code>  }</code>
-        <code>}</code>
-    </pre>
+    <h2>Примеры</h2>
 </section>
 
 <section class="slide">
@@ -202,80 +149,19 @@
     <h2>Название теста</h2>
     <pre>
         <code>gemini.suite(<mark>'test'</mark>, (suite) => {</code>
-        <code>  suite.setUrl('/')</code>
-        <code>    .setCaptureElements('.test__root')</code>
-        <code>    .capture('plain');</code>
-        <code>});</code>
-    </pre>
-</section>
-
-<section class="slide">
-    <h2>URL — адрес теста</h2>
-    <pre>
-        <code>gemini.suite('test', (suite) => {</code>
         <code>  suite.setUrl(<mark>'/'</mark>)</code>
-        <code>    .setCaptureElements('.test__root')</code>
-        <code>    .capture('plain');</code>
-        <code>});</code>
-    </pre>
-</section>
-
-<section class="slide">
-    <h2>Селектор теста</h2>
-    <pre>
-        <code>gemini.suite('test', (suite) => {</code>
-        <code>  suite.setUrl('/')</code>
         <code>    .setCaptureElements(<mark>'.test__root'</mark>)</code>
-        <code>    .capture('plain');</code>
+        <code>    .capture(<mark>'plain'</mark>);</code>
         <code>});</code>
     </pre>
 </section>
 
-<section class="slide">
-    <h2 class="shout">Есть один нюанс</h2>
-</section>
-
-<section class="slide">
-    <h2>Ограничения</h2>
-    <ul>
-        <li>Работает через selenium (нужно запускать отдельно)</li>
-        <li>Скриншоты — не замена другим тестам</li>
-        <li>Запуск на разных машинах приводит к разным результатам</li>
-        <li>Нужно использовать статические данные</li>
-    </ul>
-</section>
-
 <section class="slide" id="picture">
     <h2>Профит использования</h2>
     <ul>
-        <li>При обновлениях оперативно видите что поменялось</li>
-    </ul>
-</section>
-
-<section class="slide" id="picture">
-    <h2>Профит использования</h2>
-    <ul>
-        <li>При обновлениях оперативно видите что поменялось</li>
-        <li>Повышается надежность и уверенность</li>
-    </ul>
-</section>
-
-<section class="slide" id="picture">
-    <h2>Профит использования</h2>
-    <ul>
-        <li>При обновлениях оперативно видите что поменялось</li>
-        <li>Повышается надежность и уверенность</li>
         <li>При рефакторинге, нет боли (почти)</li>
-    </ul>
-</section>
-
-<section class="slide" id="picture">
-    <h2>Профит использования</h2>
-    <ul>
         <li>При обновлениях оперативно видите что поменялось</li>
         <li>Повышается надежность и уверенность</li>
-        <li>При рефакторинге, нет боли (почти)</li>
-        <li>Скриншотное тестирование увлекательно</li>
     </ul>
 </section>
 
@@ -284,8 +170,6 @@
     <ul>
         <li><a href="https://github.com/gemini-testing/gemini">gemini-testing/gemini</a></li>
         <li><a href="https://gemini-testing.github.io/">gemini-testing.github.io</a></li>
-        <li><a href="https://getstorybook.io/docs/react-storybook/testing/react-ui-testing">react-storybook/testing/react-ui-testing</a>
-        </li>
         <li><a href="https://getstorybook.io/docs/react-storybook/testing/css-style-testing">react-storybook/testing/css-style-testing</a>
         </li>
         <li><a href="https://events.yandex.ru/lib/talks/4262/">Gemini: различные способы использования</a></li>
