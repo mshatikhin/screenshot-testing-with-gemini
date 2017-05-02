@@ -30,21 +30,13 @@
 </section>
 
 <section class="slide">
-    <h2>Контур.Гособлако</h2>
+    <h2>Обо мне</h2>
+    <ul>
+        <li>Фронтендер в прокте Контур.Гособлако</li>
+        <li>@mshatikhin</li>
+    </ul>
     <p>Общая картина, обзор</p>
     <p>Вставить картинки проекта</p>
-</section>
-
-<section class="slide">
-    <h2 class="shout">Острота зрения</h2>
-</section>
-
-<section class="slide">
-    <img src="pictures/tab2.jpg" class="cover"/>
-</section>
-
-<section class="slide">
-    <img src="pictures/tab_diff_2.jpg" class="cover"/>
 </section>
 
 <section class="slide">
@@ -64,19 +56,30 @@
 </section>
 
 <section class="slide">
-    <h2>Мотивация</h2>
+    <h2 class="shout">Острота зрения</h2>
+</section>
+
+<section class="slide">
+    <img src="pictures/tab2.jpg" class="cover"/>
+</section>
+
+<section class="slide">
+    <img src="pictures/tab_diff_2.jpg" class="cover"/>
+</section>
+
+<section class="slide">
+    <h2>Потребности</h2>
     <ul>
-        <li>Повысить надежность приложения</li>
         <li>Тратить меньше времени на ручное тестирование</li>
         <li>Избавиться от боли после рефакторинга верстки</li>
-        <li>После обновления сторонних библиотек UI быть спокойнее</li>
+        <li>Повысить надежность приложения</li>
+        <li>После обновления сторонних UI библиотек быть спокойнее</li>
     </ul>
 </section>
 
 <section class="slide">
     <h2>Тестирование вручную</h2>
     <ul>
-        <li>Долго</li>
         <li>Много рутинной работы</li>
         <li>Человеческий фактор</li>
     </ul>
@@ -97,21 +100,35 @@
         <li>Делать скриншоты компонентов в различных состояних</li>
         <li>Сравнивать скриншоты между собой автоматически</li>
         <li>Тестировать верстку в разных браузерах</li>
+        <li>Писать тесты на javascript</li>
     </ul>
 </section>
 
 <section class="slide">
-    <h2 class="shout">webdiff</h2>
+    <h2>Инструменты</h2>
+    <ul>
+        <li><a href="https://github.com/bslatkin/dpxdt">DPXDT</a></li>
+        <li>webdiff</li>
+        <li><a href="https://github.com/facebook/huxley">Huxley</a></li>
+        <li><a href="https://github.com/Huddle/PhantomCSS">casper.js + phantom.css</a></li>
+        <li><a href="https://github.com/gemini-testing/gemini">gemini</a></li>
+    </ul>
 </section>
 
 <section class="slide">
-    <h2>Почему нам не подходит</h2>
+    <h2>DPXDT, webdiff, Huxley</h2>
     <ul>
+        <li>Тестирует страницы целиком по url</li>
         <li>Не тестирует взаимодействие с пользователем</li>
         <li>Небольшие изменения верстки ломают дифф</li>
-        <li>Тестирует страницы целиком по url</li>
-        <li>Только статика</li>
-        <li>Не кроссплатформенный</li>
+        <li>Не предназначен для динамичных SPA</li>
+    </ul>
+</section>
+
+<section class="slide">
+    <h2>casper.js + phantom.css</h2>
+    <ul>
+        <li>Только в phantom.js (один бразуер)</li>
     </ul>
 </section>
 
@@ -122,24 +139,27 @@
 <section class="slide">
     <h2>Возможности</h2>
     <ul>
-        <li>Возможность взаимодействовать с UI</li>
-        <li>Тестирование страницы по блокам</li>
-        <li>Тесты пишутся на js</li>
-        <li>Возможность игнорировать лишнее</li>
+        <li>API для взаимодействовия с UI</li>
+        <li>Тестирование по блокам</li>
+        <li>Игнорирование лишнего</li>
         <li>Удобный HTML отчёт</li>
         <li>Есть GUI</li>
-        <li>Запуск тестов в разных браузерах (Chrome, Firefox, IE8+, Opera 12+)</li>
+        <li>Запуск тестов в разных браузерах</li>
         <li>Есть plugin для React (gemini-react)</li>
     </ul>
 </section>
 
 <section class="slide">
-    <h2>Недостатки</h2>
+    <h2>Ограничения</h2>
     <ul>
-        <li>Работает через selenium (нужно запускать отдельно)</li>
-        <!--<li>Запуск на разных машинах приводит к разным результатам</li>-->
-        <!--<li>Необходимо использовать статические данные</li>-->
+        <li>Работает через selenium</li>
+        <li>Нужно хранить скриншоты в репозитории</li>
+        <li>Нужно писать тесты на javascript</li>
     </ul>
+</section>
+
+<section class="slide">
+    <h2>Схема работы</h2>
 </section>
 
 <section class="slide">
@@ -163,12 +183,23 @@
     </pre>
 </section>
 
-<section class="slide" id="picture">
+<section class="slide">
     <h2>Профит использования</h2>
     <ul>
-        <li>При рефакторинге - меньше боли</li>
+        <li>У вас больше времени на разработку</li>
+        <li>Меньше боли при рефакторинге</li>
         <li>При обновлениях верстки оперативно видите что изменилось</li>
         <li>Повышается надежность и уверенность</li>
+    </ul>
+</section>
+
+<section class="slide">
+    <h2>Call to action</h2>
+    <ul>
+        <li>Пишите тесты</li>
+        <li>Используйте песочницу компонентов</li>
+        <li>Пишите тесты до релиза</li>
+        <li>Берегите глаза</li>
     </ul>
 </section>
 
@@ -182,7 +213,8 @@
         <li><a href="https://events.yandex.ru/lib/talks/4262/">Gemini: различные способы использования</a></li>
         <li><a href="https://gist.github.com/cvrebert/adf91e429906a4d746cd">Другие инструменты CSS Regression
             Testing</a></li>
-        <li><a href="https://github.com/mshatikhin/gemini-react-starter">github.com/mshatikhin/gemini-react-starter</a></li>
+        <li><a href="https://github.com/mshatikhin/gemini-react-starter">github.com/mshatikhin/gemini-react-starter</a>
+        </li>
     </ul>
 </section>
 
