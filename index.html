@@ -91,7 +91,6 @@
     </ul>
 </section>
 
-
 <section class="slide">
     <h2 class="shout">Мучение</h2>
 </section>
@@ -139,6 +138,11 @@
 </section>
 
 <section class="slide">
+    <h2>Таблица сравнения</h2>
+    <p>...</p>
+</section>
+
+<section class="slide">
     <h2 class="shout">gemini</h2>
 </section>
 
@@ -166,28 +170,42 @@
 
 <section class="slide">
     <h2>Схема работы</h2>
+    <p>...</p>
 </section>
 
 <section class="slide">
-    <h2>Примеры</h2>
-    <p>Реальные примеры</p>
-    <p>.....</p>
+    <h2 class="shout">Примеры</h2>
 </section>
 
 <section class="slide">
-    <h2 class="shout">Пример теста</h2>
+    <img src="pictures/2017-04-27_18-26-52.png" width="453" class="place"/>
 </section>
 
 <section class="slide">
-    <h2>Название теста</h2>
+    <img src="pictures/test_combobox_screen.png" class="cover"/>
+</section>
+
+<section class="slide">
+    <h2>Пример теста</h2>
     <pre>
-        <code>gemini.suite(<mark>'test'</mark>, (suite) => {</code>
-        <code>  suite.setUrl(<mark>'/'</mark>)</code>
-        <code>    .setCaptureElements(<mark>'.test__root'</mark>)</code>
+        <code>gemini.suite(<mark>'FieldEditor'</mark>, (suite) => {</code>
+        <code>  suite.setUrl(<mark>getUrl('FieldEditor')</mark>)</code>
+        <code>    .setCaptureElements(<mark>'.FieldEditor__root'</mark>)</code>
         <code>    .capture(<mark>'plain'</mark>);</code>
         <code>});</code>
     </pre>
 </section>
+
+<section class="slide">
+    <h2>Чему нас учит тестирование</h2>
+    <ul>
+        <li>Писать небольшие, понятные компоненты</li>
+        <li>Бережно относиться к изменениям</li>
+        <li>Тщательныее продумывать API компонента</li>
+        <li>Отдавать рутину машине</li>
+    </ul>
+</section>
+
 
 <section class="slide">
     <h2>Профит использования</h2>
@@ -201,12 +219,35 @@
 </section>
 
 <section class="slide">
-    <h2>Призыв к действию</h2>
+    <h2>Полезные советы</h2>
     <ul>
         <li>Пишите тесты до релиза</li>
         <li>Используйте песочницу компонентов</li>
         <li>Берегите глаза</li>
     </ul>
+</section>
+
+<section class="slide">
+    <h2>Как настроить git lfs</h2>
+    <ul>
+        <li>>$ git lfs install</li>
+        <li>>$ git lfs track "gemini/screens/**/*"</li>
+    </ul>
+</section>
+
+<section class="slide">
+    <img src="pictures/git_screenshot.png" class="cover"/>
+</section>
+
+<section class="slide">
+    <h2 class="shout">Спасибо</h2>
+</section>
+
+<section class="slide">
+    <h2>Вопросы?</h2>
+    <div>
+        <img src="pictures/giphy.gif" width="600"/>
+    </div>
 </section>
 
 <section class="slide">
@@ -222,14 +263,6 @@
         <li><a href="https://github.com/mshatikhin/gemini-react-starter">github.com/mshatikhin/gemini-react-starter</a>
         </li>
     </ul>
-</section>
-
-<section class="slide">
-    <h2 class="shout">Спасибо</h2>
-</section>
-
-<section class="slide">
-    <h2>Вопросы?</h2>
 </section>
 
 <!--
