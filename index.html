@@ -272,12 +272,17 @@
     <img src="pictures/test_combobox_screen.png" class="cover"/>
 </section>
 
+
+<section class="slide">
+    <img src="pictures/tree_view_example.png" class="cover"/>
+</section>
+
 <section class="slide">
     <h2>Пример теста</h2>
     <pre>
-        <code>gemini.suite(<mark>'FieldEditor'</mark>, (suite) => {</code>
-        <code>  suite.setUrl(<mark>getUrl('FieldEditor')</mark>)</code>
-        <code>    .setCaptureElements(<mark>'.FieldEditor__root'</mark>)</code>
+        <code>gemini.suite(<mark>'Tree view'</mark>, (suite) => {</code>
+        <code>  suite.setUrl(<mark>getUrl('TreeView', 'TreeView')</mark>)</code>
+        <code>    .setCaptureElements(<mark>'.TreeView__root'</mark>)</code>
         <code>    .capture(<mark>'plain'</mark>);</code>
         <code>});</code>
     </pre>
