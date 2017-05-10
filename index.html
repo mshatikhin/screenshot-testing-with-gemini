@@ -57,7 +57,7 @@
         <li>SPA приложение</li>
         <li>Много динамики</li>
         <li>Бэкенд генерирует meta описание для генерации форм</li>
-        <li>В будущем порядка 350 реквизитов</li>
+        <li>В будущем порядка 350 редакторов реквизитов</li>
         <li>Кастомизация под заказчика</li>
     </ul>
 </section>
@@ -65,12 +65,12 @@
 <section class="slide">
     <h2>Виды тестирования</h2>
     <ul>
-        <li>e2e <code>(nigthwatch, ...)</code></li>
-        <li>css/style <code>(gemini, ...)</code></li>
+        <li>e2e <code>(nigthwatch)</code></li>
+        <li>css/style <code>(gemini)</code></li>
         <li>integration <code>(jest, enzyme)</code></li>
         <li>unit <code>(jest)</code></li>
         <li>structure <code>(jest snapshot)</code></li>
-        <li>type checking <code>(typescript, flow)</code></li>
+        <li>type checking <code>(typescript)</code></li>
     </ul>
 </section>
 
@@ -129,16 +129,15 @@
 <section class="slide">
     <h2>Инструменты</h2>
     <ul>
-        <li><a href="https://github.com/bslatkin/dpxdt">DPXDT</a></li>
-        <li>webdiff</li>
-        <li><a href="https://github.com/facebook/huxley">Huxley</a></li>
-        <li><a href="https://github.com/Huddle/PhantomCSS">casper.js + phantom.css</a></li>
-        <li><a href="https://github.com/gemini-testing/gemini">gemini</a></li>
+        <li><a target="_blank" href="https://staff.skbkontur.ru/profile/titarenko">webdiff</a></li>
+        <li><a target="_blank" href="https://github.com/bslatkin/dpxdt">DPXDT</a></li>
+        <li><a target="_blank" href="https://github.com/Huddle/PhantomCSS">casper.js + phantom.css</a></li>
+        <li><a target="_blank" href="https://github.com/gemini-testing/gemini">gemini</a></li>
     </ul>
 </section>
 
 <section class="slide">
-    <h2>DPXDT, webdiff, Huxley</h2>
+    <h2>DPXDT, webdiff</h2>
     <ul>
         <li>Тестирует страницы целиком по url</li>
         <li>Не тестирует взаимодействие с пользователем</li>
@@ -156,8 +155,79 @@
 </section>
 
 <section class="slide">
-    <h2>Таблица сравнения</h2>
-    <p>...</p>
+    <h2 class="shout">Таблица сравнения</h2>
+</section>
+
+<section class="slide">
+    <style>
+        .green {
+            background: #4caf50 !important;
+        }
+
+        .red {
+            background: #cc0000 !important;
+        }
+
+        #table,
+        #table th,
+        #table td {
+            border: 1px solid #ddd;
+            text-align: center;
+            font-weight: 400;
+        }
+
+        #table th:first-child,
+        #table td:first-child {
+            padding: 10px !important;
+        }
+
+        #table th,
+        #table td {
+            padding: 20px;
+        }
+    </style>
+    <table id="table">
+        <thead>
+        <tr>
+            <th>&nbsp;</th>
+            <th>Страницы</th>
+            <th>Компоненты</th>
+            <th>Исключения</th>
+            <th>Разные браузеры</th>
+            <th>GUI</th>
+            <th>Code coverage</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>webdiff, DPXDT</td>
+            <td class="green">&nbsp;</td>
+            <td class="red">&nbsp;</td>
+            <td class="red">&nbsp;</td>
+            <td class="red">&nbsp;</td>
+            <td class="red">&nbsp;</td>
+            <td class="red">&nbsp;</td>
+        </tr>
+        <tr>
+            <td>phantom.css</td>
+            <td class="green">&nbsp;</td>
+            <td class="green">&nbsp;</td>
+            <td class="green">&nbsp;</td>
+            <td class="red">&nbsp;</td>
+            <td class="red">&nbsp;</td>
+            <td class="red">&nbsp;</td>
+        </tr>
+        <tr>
+            <td>gemini</td>
+            <td class="green">&nbsp;</td>
+            <td class="green">&nbsp;</td>
+            <td class="green">&nbsp;</td>
+            <td class="green">&nbsp;</td>
+            <td class="green">&nbsp;</td>
+            <td class="green">&nbsp;</td>
+        </tr>
+        </tbody>
+    </table>
 </section>
 
 <section class="slide">
@@ -167,13 +237,17 @@
 <section class="slide">
     <h2>Возможности</h2>
     <ul>
-        <li>API для взаимодействовия с UI</li>
-        <li>Тестирование по блокам</li>
+        <li>API для взаимодействовия с UI
+            <mark>(mouseMove, click, ...)</mark>
+        </li>
+        <li>Тестирование страниц по блокам</li>
         <li>Игнорирование лишнего</li>
-        <li>Удобный HTML отчёт</li>
+        <li>Подробный HTML отчёт</li>
         <li>Есть GUI</li>
         <li>Запуск тестов в разных браузерах</li>
-        <li>Есть plugin для React (gemini-react)</li>
+        <li>Есть плагины
+            <mark>(react, webpack, teamcity)</mark>
+        </li>
     </ul>
 </section>
 
@@ -184,11 +258,6 @@
         <li>Нужно хранить скриншоты в репозитории</li>
         <li>Нужно писать тесты на javascript</li>
     </ul>
-</section>
-
-<section class="slide">
-    <h2>Схема работы</h2>
-    <p>...</p>
 </section>
 
 <section class="slide">
@@ -219,14 +288,13 @@
     <ul>
         <li>Писать небольшие, понятные компоненты</li>
         <li>Бережно относиться к изменениям</li>
-        <li>Тщательныее продумывать API компонента</li>
         <li>Отдавать рутину машине</li>
     </ul>
 </section>
 
 
 <section class="slide">
-    <h2>Профит использования</h2>
+    <h2>Профит использования css/style тестирования</h2>
     <ul>
         <li>У вас больше времени на разработку</li>
         <li>Меньше боли при рефакторинге</li>
@@ -271,14 +339,15 @@
 <section class="slide">
     <h2>Ссылки</h2>
     <ul>
-        <li><a href="https://github.com/gemini-testing/gemini">gemini-testing/gemini</a></li>
-        <li><a href="https://gemini-testing.github.io/">gemini-testing.github.io</a></li>
-        <li><a href="https://getstorybook.io/docs/react-storybook/testing/css-style-testing">react-storybook/testing/css-style-testing</a>
+        <li><a target="_blank" href="https://github.com/gemini-testing/gemini">gemini-testing/gemini</a></li>
+        <li><a target="_blank" href="https://getstorybook.io/docs/react-storybook/testing/css-style-testing">react-storybook/testing/css-style-testing</a>
         </li>
-        <li><a href="https://events.yandex.ru/lib/talks/4262/">Gemini: различные способы использования</a></li>
-        <li><a href="https://gist.github.com/cvrebert/adf91e429906a4d746cd">Другие инструменты CSS Regression
+        <li><a target="_blank" href="https://events.yandex.ru/lib/talks/4262/">Gemini: различные способы
+            использования</a></li>
+        <li><a target="_blank" href="https://gist.github.com/cvrebert/adf91e429906a4d746cd">Другие инструменты CSS
+            Regression
             Testing</a></li>
-        <li><a href="https://github.com/mshatikhin/gemini-react-starter">github.com/mshatikhin/gemini-react-starter</a>
+        <li><a target="_blank" href="https://github.com/mshatikhin/gemini-react-starter">github.com/mshatikhin/gemini-react-starter</a>
         </li>
     </ul>
 </section>
