@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="shower/themes/ribbon/styles/screen-16x10.css">
+    <link rel="stylesheet" href="shower/themes/ribbon/styles/screen-4x3.css">
 </head>
 <body class="shower list">
 
@@ -40,15 +40,23 @@
 </section>
 
 <section class="slide">
-    <h2 class="shout">Контур.Гособлако</h2>
+    <img src="./pictures/Logo%20GO.png" class="cover" style="padding: 0 100px;">
 </section>
 
 <section class="slide">
-    <img class="cover" src="pictures/gos2.png">
+    <img class="cover place width top" src="pictures/Основная%20информация.png">
 </section>
 
 <section class="slide">
-    <img class="cover" src="pictures/gos.png">
+    <img class="cover place width top" src="pictures/ИД%202.png">
+</section>
+
+<section class="slide">
+    <img class="cover place width top" src="pictures/Новый%20ТД.png">
+</section>
+
+<section class="slide">
+    <img class="cover place width top" src="pictures/Создание%20сотрудника%202.png">
 </section>
 
 <section class="slide">
@@ -265,10 +273,6 @@
 </section>
 
 <section class="slide">
-    <img src="pictures/2017-04-27_18-26-52.png" class="cover"/>
-</section>
-
-<section class="slide">
     <img src="pictures/test_combobox_screen.png" class="cover width"/>
 </section>
 
@@ -280,11 +284,16 @@
 <section class="slide">
     <h2>Пример теста</h2>
     <pre>
-        <code>gemini.suite(<mark>'Tree view'</mark>, (suite) => {</code>
-        <code>  suite.setUrl(<mark>getUrl('TreeView', 'TreeView')</mark>)</code>
-        <code>    .setCaptureElements(<mark>'.TreeView__root'</mark>)</code>
-        <code>    .capture(<mark>'plain'</mark>);</code>
-        <code>});</code>
+        <code>gemini.suite(<mark>'RequisiteHistoryEditor'</mark>, suite => {</code>
+        <code>  suite.setUrl(<mark>url</mark>)</code>
+        <code>    .setCaptureElements(<mark>selectors</mark>)</code>
+        <code>    .capture(<mark>'clicked'</mark>, function (actions, find) {</code>
+        <code>      this.row = find(rowSelector);</code>
+        <code>      actions</code>
+        <code>        .mouseDown(this.row)</code>
+        <code>        .mouseUp(this.row);</code>
+        <code>    });</code>
+        <code>});
     </pre>
 </section>
 
