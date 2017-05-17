@@ -15,13 +15,14 @@
 </header>
 
 <section class="slide" id="cover">
-    <h2>Скриншотное тестирование с использованием gemini</h2>
+    <h2>Скриншотное тестирование</h2>
     <figure>
         <img class="cover" src="pictures/cover.jpg" alt="Cover">
     </figure>
     <style>
         #cover h2 {
-            margin: 250px 0 0;
+            position: absolute;
+            top: 0;
             color: #FFF;
             text-align: center;
             font-size: 70px;
@@ -30,17 +31,32 @@
 </section>
 
 <section class="slide">
-    <h2>Обо мне</h2>
-    <ul>
+    <h2 style="color: white">Обо мне</h2>
+    <ul style="color: white">
         <li>Фронтендер в проекте Контур.Гособлако</li>
-        <li>Использую стек React - Redux - ...</li>
-        <li>Пишу на typescript</li>
-        <li>Пишу тесты на фронтенд</li>
+        <li class="next">Люблю прогрессивные инструменты</li>
+        <li class="next">Не люблю баги</li>
+        <li class="next">Пишу тесты</li>
     </ul>
+
+    <img src="pictures/me.jpg" class="cover"/>
 </section>
 
 <section class="slide">
     <img src="./pictures/Logo%20GO.png" class="cover" style="padding: 0 100px;">
+</section>
+
+
+<section class="slide">
+    <h2>Контур.Гособлако</h2>
+    <ul>
+        <li>Нет легаси</li>
+        <li>Динамичное SPA приложение</li>
+        <li>Бэкенд генерирует meta описания для генерации форм</li>
+        <li>В будущем порядка 350 редакторов реквизитов</li>
+        <li>Кастомизация под заказчика</li>
+        <li>Разворачивается у заказчика</li>
+    </ul>
 </section>
 
 <section class="slide">
@@ -60,21 +76,14 @@
 </section>
 
 <section class="slide">
-    <h2>Контур.Гособлако</h2>
-    <ul>
-        <li>SPA приложение</li>
-        <li>Много динамики</li>
-        <li>Бэкенд генерирует meta описание для генерации форм</li>
-        <li>В будущем порядка 350 редакторов реквизитов</li>
-        <li>Кастомизация под заказчика</li>
-    </ul>
+    <h2 class="shout">Как жить спокойнее</h2>
 </section>
 
 <section class="slide">
-    <h2>Виды тестирования</h2>
+    <h2>Тестировать</h2>
     <ul>
         <li>e2e <code>(nigthwatch)</code></li>
-        <li>css/style <code>(gemini)</code></li>
+        <li><mark>css/style</mark> <code>(gemini)</code></li>
         <li>integration <code>(jest, enzyme)</code></li>
         <li>unit <code>(jest)</code></li>
         <li>structure <code>(jest snapshot)</code></li>
@@ -84,18 +93,6 @@
 
 <section class="slide">
     <h2 class="shout">css/style testing</h2>
-</section>
-
-<section class="slide">
-    <h2 class="shout">Острота зрения</h2>
-</section>
-
-<section class="slide">
-    <img src="pictures/tab2.jpg" class="cover"/>
-</section>
-
-<section class="slide">
-    <img src="pictures/tab_diff_2.jpg" class="cover"/>
 </section>
 
 <section class="slide">
@@ -112,9 +109,9 @@
     <h2>Как хочется</h2>
     <ul>
         <li>Делать скриншоты компонентов в разных состояних</li>
-        <li class="next">Сравнивать скриншоты между собой автоматически</li>
+        <li class="next">Сравнивать между собой автоматически</li>
         <li class="next">Хранить эталоны в репозитории</li>
-        <li class="next">Тестировать верстку в разных браузерах</li>
+        <li class="next">Тестировать в разных браузерах</li>
     </ul>
 </section>
 
@@ -132,10 +129,23 @@
 </section>
 
 <section class="slide">
+    <h2 class="shout">Острота зрения</h2>
+</section>
+
+<section class="slide">
+    <img src="pictures/tab2.jpg" class="cover"/>
+</section>
+
+<section class="slide">
+    <img src="pictures/tab_diff_2.jpg" class="cover"/>
+</section>
+
+<section class="slide">
     <h2>Тестирование вручную</h2>
     <ul>
         <li>Много рутинной работы</li>
         <li>Человеческий фактор</li>
+        <li>Боль</li>
     </ul>
     <div class="place bottom" style="bottom: 100px;">
         <img src="pictures/eyes.gif" width="500" class="next"/>
@@ -143,7 +153,7 @@
 </section>
 
 <section class="slide">
-    <h2>DPXDT, webdiff</h2>
+    <h2>webdiff, DPXDT</h2>
     <ul>
         <li>Тестирует страницы целиком по url</li>
         <li>Не тестирует взаимодействие с пользователем</li>
@@ -167,9 +177,9 @@
             <mark>(mouseMove, mouseDown, ...)</mark>
         </li>
         <li class="next">Возможность игнорировать лишнее</li>
+        <li class="next">Запуск тестов в разных браузерах</li>
         <li class="next">Подробный HTML отчёт</li>
         <li class="next">Есть GUI</li>
-        <li class="next">Запуск тестов в разных браузерах</li>
         <li class="next">Есть плагины
             <mark>(coverage, react, webpack, teamcity)</mark>
         </li>
@@ -213,6 +223,7 @@
             <th>Страницы</th>
             <th>Блоки</th>
             <th>Исключения</th>
+            <th>Взаимодействие</th>
             <th>Разные браузеры</th>
         </tr>
         </thead>
@@ -223,9 +234,11 @@
             <td class="red">&nbsp;</td>
             <td class="red">&nbsp;</td>
             <td class="red">&nbsp;</td>
+            <td class="red">&nbsp;</td>
         </tr>
         <tr>
-            <td>phantom.css</td>
+            <td style="text-decoration: line-through">phantom.css</td>
+            <td class="green">&nbsp;</td>
             <td class="green">&nbsp;</td>
             <td class="green">&nbsp;</td>
             <td class="green">&nbsp;</td>
@@ -233,6 +246,7 @@
         </tr>
         <tr>
             <td>gemini</td>
+            <td class="green">&nbsp;</td>
             <td class="green">&nbsp;</td>
             <td class="green">&nbsp;</td>
             <td class="green">&nbsp;</td>
@@ -331,10 +345,6 @@
         <code>    });</code>
         <code class="grey">});</code>
     </pre>
-</section>
-
-<section class="slide">
-    <img src="pictures/gos_example_1.jpg" class="cover width"/>
 </section>
 
 <section class="slide">
