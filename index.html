@@ -15,7 +15,7 @@
 </header>
 
 <section class="slide" id="cover">
-    <h2>Скриншотное тестирование</h2>
+    <h2>Тестируем с gemini</h2>
     <figure>
         <img class="cover" src="pictures/cover.jpg" alt="Cover">
     </figure>
@@ -50,12 +50,11 @@
 <section class="slide">
     <h2>Контур.Гособлако</h2>
     <ul>
-        <li>Нет легаси</li>
+        <li>Новый проект</li>
         <li>Динамичное SPA приложение</li>
         <li>Бэкенд генерирует meta описания для генерации форм</li>
         <li>В будущем порядка 350 редакторов реквизитов</li>
         <li>Кастомизация под заказчика</li>
-        <li>Разворачивается у заказчика</li>
     </ul>
 </section>
 
@@ -83,7 +82,8 @@
     <h2>Тестировать</h2>
     <ul>
         <li>e2e <code>(nigthwatch)</code></li>
-        <li><mark>css/style</mark> <code>(gemini)</code></li>
+        <li><mark>css/style</mark>
+            <code>(gemini)</code></li>
         <li>integration <code>(jest, enzyme)</code></li>
         <li>unit <code>(jest)</code></li>
         <li>structure <code>(jest snapshot)</code></li>
@@ -98,8 +98,8 @@
 <section class="slide">
     <h2>Потребности</h2>
     <ul>
-        <li>Тратить меньше времени на ручное тестирование</li>
         <li>Избавиться от боли после рефакторинга</li>
+        <li>Тратить меньше времени на ручное тестирование</li>
         <li>Повысить надежность приложения</li>
         <li>После обновления сторонних UI библиотек быть спокойнее</li>
     </ul>
@@ -123,13 +123,13 @@
         <li><a target="_blank" href="https://staff.skbkontur.ru/profile/titarenko">webdiff</a>, <a target="_blank"
                                                                                                    href="https://github.com/bslatkin/dpxdt">DPXDT</a>
         </li>
-        <li><a target="_blank" href="https://github.com/Huddle/PhantomCSS">casper.js + phantom.css</a></li>
+        <li><a target="_blank" href="https://github.com/Huddle/PhantomCSS">phantom.css</a></li>
         <li><a target="_blank" href="https://github.com/gemini-testing/gemini">gemini</a></li>
     </ul>
 </section>
 
 <section class="slide">
-    <h2 class="shout">Острота зрения</h2>
+    <h2 class="shout">Hands and eyes</h2>
 </section>
 
 <section class="slide">
@@ -162,7 +162,7 @@
 </section>
 
 <section class="slide">
-    <h2>casper.js + phantom.css</h2>
+    <h2>phantom.css</h2>
     <ul>
         <li>Только в phantom.js (один браузер)</li>
         <li>phantom.js умирает</li>
@@ -174,7 +174,7 @@
     <ul>
         <li>Умеет делать скриншоты любой части страницы</li>
         <li>API для взаимодействовия с UI
-            <mark>(mouseMove, mouseDown, ...)</mark>
+            <mark>(mouseMove, click, ...)</mark>
         </li>
         <li class="next">Возможность игнорировать лишнее</li>
         <li class="next">Запуск тестов в разных браузерах</li>
@@ -259,9 +259,9 @@
 <section class="slide">
     <h2>Недостатки gemini</h2>
     <ul>
-        <li>Работает через selenium</li>
-        <li>Нужно хранить скриншоты в репозитории</li>
+        <li>Поддержка инфраструктуры (selenium)</li>
         <li>Нужно писать тесты</li>
+        <li>Сложности в установке (GCC, Pyton)</li>
     </ul>
 </section>
 
@@ -288,6 +288,7 @@
         .grey {
             color: #ddd;
         }
+
         .blue {
             color: #376da3;
         }
@@ -354,16 +355,6 @@
 <section class="slide">
     <img src="pictures/gos_example_3.jpg" class="cover width"/>
 </section>
-
-<section class="slide">
-    <h2>Чему нас учит тестирование</h2>
-    <ul>
-        <li>Писать небольшие, понятные компоненты</li>
-        <li>Бережно относиться к изменениям</li>
-        <li>Отдавать рутину машине</li>
-    </ul>
-</section>
-
 
 <section class="slide">
     <h2>Профит использования css/style тестирования</h2>
