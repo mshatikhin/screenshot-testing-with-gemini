@@ -46,7 +46,6 @@
     <img src="./pictures/Logo%20GO.png" class="cover" style="padding: 0 100px;">
 </section>
 
-
 <section class="slide">
     <h2>Контур.Гособлако</h2>
     <ul>
@@ -55,7 +54,15 @@
         <li>Бэкенд генерирует meta описания для генерации форм</li>
         <li>В будущем порядка 350 редакторов реквизитов</li>
         <li>Кастомизация под заказчика</li>
+        <li>Хостится у заказчика</li>
     </ul>
+</section>
+
+<section class="slide">
+    <p>
+        Картинка Архитектура сервиса
+        .....
+    </p>
 </section>
 
 <section class="slide">
@@ -82,7 +89,8 @@
     <h2>Тестировать</h2>
     <ul>
         <li>e2e <code>(nigthwatch)</code></li>
-        <li><mark>css/style</mark>
+        <li>
+            <mark>css/style</mark>
             <code>(gemini)</code></li>
         <li>integration <code>(jest, enzyme)</code></li>
         <li>unit <code>(jest)</code></li>
@@ -100,7 +108,7 @@
     <ul>
         <li>Избавиться от боли после рефакторинга</li>
         <li>Тратить меньше времени на ручное тестирование</li>
-        <li>Повысить надежность приложения</li>
+        <li>Повысить качество приложения</li>
         <li>После обновления сторонних UI библиотек быть спокойнее</li>
     </ul>
 </section>
@@ -118,7 +126,7 @@
 <section class="slide">
     <h2>Инструменты</h2>
     <ul>
-        <li><a target="_blank" href="https://translate.google.com/?hl=ru#auto/ru/Hands%20and%20eyes">Hands and eyes</a>
+        <li><a target="_blank" href="https://translate.google.com/?hl=ru#auto/ru/Hands%20and%20eyes">eyes</a>
         </li>
         <li><a target="_blank" href="https://staff.skbkontur.ru/profile/titarenko">webdiff</a>, <a target="_blank"
                                                                                                    href="https://github.com/bslatkin/dpxdt">DPXDT</a>
@@ -129,7 +137,7 @@
 </section>
 
 <section class="slide">
-    <h2 class="shout">Hands and eyes</h2>
+    <h2 class="shout">Eyes</h2>
 </section>
 
 <section class="slide">
@@ -164,8 +172,7 @@
 <section class="slide">
     <h2>phantom.css</h2>
     <ul>
-        <li>Только в phantom.js (один браузер)</li>
-        <li>phantom.js умирает</li>
+        <li>Только один браузер (консольный)</li>
     </ul>
 </section>
 
@@ -173,17 +180,14 @@
     <h2>gemini</h2>
     <ul>
         <li>Умеет делать скриншоты любой части страницы</li>
-        <li>API для взаимодействовия с UI
+        <li>Есть API для взаимодействовия с UI
             <mark>(mouseMove, click, ...)</mark>
         </li>
         <li class="next">Возможность игнорировать лишнее</li>
         <li class="next">Запуск тестов в разных браузерах</li>
         <li class="next">Подробный HTML отчёт</li>
         <li class="next">Есть GUI</li>
-        <li class="next">Есть плагины
-            <mark>(coverage, react, webpack, teamcity)</mark>
-        </li>
-        <li class="next">Кроссплатформенная</li>
+        <li class="next">Есть плагины (teamcity, react, webpack, coverage)</li>
     </ul>
 </section>
 
@@ -276,8 +280,7 @@
         <code>  suite.setUrl(url)</code>
         <code>    .setCaptureElements(selectors)</code>
         <code>    .capture('clicked', function (actions, find) {</code>
-        <code>      this.row = find(rowSelector);</code>
-        <code>      actions.click(this.row);</code>
+        <code>      actions.click(find(rowSelector));</code>
         <code>    });</code>
         <code>});</code>
     </pre>
@@ -299,8 +302,7 @@
         <code class="grey">  suite.setUrl(url)</code>
         <code class="grey">    .setCaptureElements(selectors)</code>
         <code class="grey">    .capture('clicked', function (actions, find) {</code>
-        <code class="grey">      this.row = find(rowSelector);</code>
-        <code class="grey">      actions.click(this.row)</code>
+        <code class="grey">      actions.click(find(rowSelector))</code>
         <code class="grey">    });</code>
         <code>});</code>
     </pre>
@@ -313,8 +315,7 @@
         <code>  suite.setUrl(<mark>url</mark>)</code>
         <code class="grey">    .setCaptureElements(selectors)</code>
         <code class="grey">    .capture('clicked', function (actions, find) {</code>
-        <code class="grey">      this.row = find(rowSelector);</code>
-        <code class="grey">      actions.click(this.row);</code>
+        <code class="grey">      actions.click(find(rowSelector);</code>
         <code class="grey">    });</code>
         <code class="grey">});</code>
     </pre>
@@ -327,8 +328,7 @@
         <code class="grey">  suite.setUrl(url)</code>
         <code>    .setCaptureElements(<mark>selectors</mark>)</code>
         <code class="grey">    .capture('clicked', function (actions, find) {</code>
-        <code class="grey">      this.row = find(rowSelector);</code>
-        <code class="grey">      actions.click(this.row);</code>
+        <code class="grey">      actions.click(find(rowSelector));</code>
         <code class="grey">    });</code>
         <code class="grey">});</code>
     </pre>
@@ -341,8 +341,7 @@
         <code class="grey">  suite.setUrl(url)</code>
         <code class="grey">    .setCaptureElements(selectors)</code>
         <code>    .capture(<mark>'clicked'</mark>, function (actions, find) {</code>
-        <code>      this.row = find(rowSelector);</code>
-        <code>      actions.click(this.row);</code>
+        <code>      actions.click(find(rowSelector));</code>
         <code>    });</code>
         <code class="grey">});</code>
     </pre>
@@ -357,11 +356,24 @@
 </section>
 
 <section class="slide">
+    <p>
+        Еще животрепещущий пример
+    </p>
+</section>
+
+<section class="slide">
+    <h2>Резюме</h2>
+    <p>
+        ... vs gemini
+    </p>
+</section>
+
+<section class="slide">
     <h2>Профит использования css/style тестирования</h2>
     <ul>
-        <li>У вас больше времени на разработку</li>
         <li>Меньше боли при рефакторинге</li>
         <li>При обновлениях верстки оперативно видите что изменилось</li>
+        <li>У вас больше времени на разработку</li>
         <li>Ваши компоненты становятся лаконичнее</li>
         <li>Повышается надежность и уверенность</li>
     </ul>
@@ -370,14 +382,13 @@
 <section class="slide">
     <h2>Полезные советы</h2>
     <ul>
-        <li>Пишите тесты до релиза</li>
         <li>Используйте песочницу компонентов</li>
         <li>Берегите глаза</li>
     </ul>
 </section>
 
 <section class="slide">
-    <h2 class="shout">Спасибо</h2>
+    <h2>Завершающий слайд</h2>
 </section>
 
 <section class="slide">
