@@ -281,19 +281,35 @@
 </section>
 
 <section class="slide">
-    <h2>Что выбирать</h2>
-    <table>
+    <style>
+        .slide #table_diff tr:not(:last-of-type)>*{
+            background: none;
+        }
+    </style>
+    <h2>Что выбирать?</h2>
+    <table id="table_diff">
         <thead>
         <tr>
-            <th><h2>gemini</h2></th>
-            <th>vs</th>
-            <th><h2>webdiff</h2></th>
+            <th style="width: 40%"><h2>gemini</h2></th>
+            <th style="text-align: center">&nbsp;</th>
+            <th style="width: 40%"><h2>webdiff</h2></th>
         </tr>
         </thead>
         <tbody>
         <tr>
-            <td> </td>
-            <td> </td>
+            <td>Динамика</td>
+            <td>&nbsp;</td>
+            <td>Статика</td>
+        </tr>
+        <tr class="next">
+            <td>Взаимодействие с UI</td>
+            <td>&nbsp;</td>
+            <td>&mdash;</td>
+        </tr>
+        <tr class="next">
+            <td>Скриншоты в репозитории</td>
+            <td>&nbsp;</td>
+            <td>&mdash;</td>
         </tr>
         </tbody>
     </table>
