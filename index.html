@@ -14,7 +14,7 @@
     <p>СКБ Контур 2017</p>
 </header>
 
-<section class="slide" id="cover">
+<section class="slide black" id="cover">
     <h2>Тестируем с gemini</h2>
     <figure>
         <img class="cover" src="pictures/cover.jpg" alt="Cover">
@@ -26,53 +26,53 @@
             color: #FFF;
             text-align: center;
             font-size: 70px;
+            width: 100%;
+            left: 0;
         }
     </style>
 </section>
 
-<section class="slide">
+<section class="slide black">
     <h2 style="color: white">Обо мне</h2>
     <ul style="color: white">
-        <li>Фронтендер в проекте Контур.Гособлако</li>
-        <li>Люблю прогрессивные инструменты</li>
-        <li>Не люблю баги</li>
-        <li>Пишу тесты</li>
+        <li>Фронтендер в Контур.Гособлако</li>
+        <li class="next">Не люблю рутину</li>
+        <li class="next">Пишу тесты</li>
     </ul>
-
     <img src="pictures/me.jpg" class="cover"/>
 </section>
 
-<section class="slide">
+<section class="slide white">
     <img src="./pictures/Logo%20GO.png" class="cover" style="padding: 0 100px;">
 </section>
 
-<section class="slide">
+<section class="slide white">
     <h2>Контур.Гособлако</h2>
     <ul>
         <li>SPA приложение</li>
-        <li>Много типовых редакторов</li>
+        <li>Много редакторов форм</li>
         <li>Кастомизация под заказчика</li>
         <li>Хостится у заказчика</li>
     </ul>
 </section>
 
-<section class="slide">
+<section class="slide white">
     <img class="cover place width top" src="pictures/ИД%202.png">
 </section>
 
-<section class="slide">
+<section class="slide white">
     <img class="cover place width top" src="pictures/Новый%20ТД.png">
 </section>
 
-<section class="slide">
+<section class="slide white">
     <img class="cover place width top" src="pictures/Создание%20сотрудника%202.png">
 </section>
 
-<section class="slide">
+<section class="slide white">
     <h2 class="shout">Как жить спокойнее</h2>
 </section>
 
-<section class="slide">
+<section class="slide white">
     <h2>Тестировать</h2>
     <ul>
         <li>e2e <code>(nigthwatch)</code></li>
@@ -86,21 +86,21 @@
     </ul>
 </section>
 
-<section class="slide">
+<section class="slide white">
     <h2 class="shout">css/style testing</h2>
 </section>
 
-<section class="slide">
+<section class="slide white">
     <h2>Потребности</h2>
     <ul>
         <li>Тратить меньше времени на ручное тестирование</li>
         <li>Повысить качество приложения</li>
         <li>Избавиться от боли после рефакторинга</li>
-        <li>После обновления сторонних UI библиотек быть спокойнее</li>
+        <li>После обновления "retail-ui" быть спокойнее</li>
     </ul>
 </section>
 
-<section class="slide">
+<section class="slide white">
     <h2>Как хочется</h2>
     <ul>
         <li>Делать скриншоты компонентов в разных состояних</li>
@@ -110,10 +110,10 @@
     </ul>
 </section>
 
-<section class="slide">
+<section class="slide white">
     <h2>Инструменты</h2>
     <ul>
-        <li><a target="_blank" href="https://translate.google.com/?hl=ru#auto/ru/Hands%20and%20eyes">eyes</a>
+        <li><a target="_blank" href="https://translate.google.com/?hl=ru#auto/ru/Hands%20and%20eyes">Eyes</a>
         </li>
         <li><a target="_blank" href="https://staff.skbkontur.ru/profile/titarenko">webdiff</a></li>
         <li><a target="_blank"
@@ -123,19 +123,19 @@
     </ul>
 </section>
 
-<section class="slide">
+<section class="slide white">
     <h2 class="shout">Eyes</h2>
 </section>
 
-<section class="slide">
+<section class="slide white">
     <img src="pictures/eyes.png" class="cover"/>
 </section>
 
-<section class="slide">
+<section class="slide white">
     <img src="pictures/diff_eyes.png" class="cover"/>
 </section>
 
-<section class="slide">
+<section class="slide white">
     <h2>Тестирование вручную</h2>
     <ul>
         <li>Много рутинной работы</li>
@@ -147,7 +147,7 @@
     </div>
 </section>
 
-<section class="slide">
+<section class="slide white">
     <h2>webdiff, DPXDT</h2>
     <ul>
         <li>Тестирует страницы целиком</li>
@@ -156,43 +156,44 @@
     </ul>
 </section>
 
-<section class="slide">
+<section class="slide white">
     <h2>phantom.css</h2>
     <ul>
-        <li>Только один браузер (консольный)</li>
+        <li>Умеет делать скриншоты любой части страницы</li>
+        <li>Есть API для взаимодействовия с UI (CasperJS)</li>
+        <li>Работает только в PhantomJS и SlimerJS</li>
     </ul>
 </section>
 
-<section class="slide">
+<section class="slide white">
     <h2>gemini</h2>
     <ul>
         <li>Умеет делать скриншоты любой части страницы</li>
-        <li class="next">Есть API для взаимодействовия с UI
-            <mark>(mouseMove, click, ...)</mark>
-        </li>
-        <li class="next">Запуск тестов в разных браузерах</li>
+        <li>Есть API для взаимодействовия с UI</li>
+        <li>Запуск тестов в разных браузерах</li>
     </ul>
-    <div class="next">
-        <h4 style="color: green"><b>Бонусы</b></h4>
-        <ul>
-            <li>Возможность игнорировать лишнее</li>
-            <li>Подробный HTML отчёт</li>
-            <li>Есть GUI</li>
-            <li>Есть плагины (teamcity, react, webpack, coverage)</li>
-        </ul>
-    </div>
 </section>
 
-<section class="slide">
+<section class="slide white">
+    <h2>Бонусы</h2>
+    <ul>
+        <li>Возможность игнорировать лишнее</li>
+        <li>Подробный HTML отчёт</li>
+        <li>Есть GUI</li>
+        <li>Полезные плагины (teamcity, react, webpack)</li>
+    </ul>
+</section>
+
+<section class="slide white">
     <h2>Недостатки gemini</h2>
     <ul>
         <li>Поддержка инфраструктуры (selenium)</li>
         <li>Нужно писать тесты</li>
-        <li>Сложности в установке (GCC, Pyton)</li>
+        <li>Сложности в установке (GCC, Python)</li>
     </ul>
 </section>
 
-<section class="slide">
+<section class="slide white">
     <h2>Пример теста</h2>
     <pre>
         <code>gemini.suite('RequisiteHistoryEditor', suite => {</code>
@@ -205,7 +206,7 @@
     </pre>
 </section>
 
-<section class="slide">
+<section class="slide white">
     <style>
         .grey {
             color: #ddd;
@@ -227,7 +228,7 @@
     </pre>
 </section>
 
-<section class="slide">
+<section class="slide white">
     <h2>Пример теста</h2>
     <pre>
         <code class="grey">gemini.suite('RequisiteHistoryEditor', suite => {</code>
@@ -240,7 +241,7 @@
     </pre>
 </section>
 
-<section class="slide">
+<section class="slide white">
     <h2>Пример теста</h2>
     <pre>
         <code class="grey">gemini.suite('RequisiteHistoryEditor', suite => {</code>
@@ -253,7 +254,7 @@
     </pre>
 </section>
 
-<section class="slide">
+<section class="slide white">
     <h2>Пример теста</h2>
     <pre>
         <code class="grey">gemini.suite('RequisiteHistoryEditor', suite => {</code>
@@ -266,19 +267,19 @@
     </pre>
 </section>
 
-<section class="slide">
+<section class="slide white">
     <img src="pictures/gos_example_2.jpg" class="cover width"/>
 </section>
 
-<section class="slide">
+<section class="slide white">
     <img src="pictures/gos_example_3.jpg" class="cover width"/>
 </section>
 
-<section class="slide">
+<section class="slide white">
     <img src="pictures/gos_example_4.jpg" class="cover width"/>
 </section>
 
-<section class="slide">
+<section class="slide white">
     <h2>Профит использования css/style тестирования</h2>
     <ul>
         <li>Меньше боли при рефакторинге</li>
@@ -289,22 +290,23 @@
     </ul>
 </section>
 
-<section class="slide">
+<section class="slide white">
     <h2>Полезные советы</h2>
     <ul>
         <li>Используйте песочницу компонентов</li>
         <li>Отдавайте рутину машине</li>
+        <li>Пробуйте новое</li>
     </ul>
 </section>
 
-<section class="slide">
+<section class="slide white">
     <h2>Вопросы?</h2>
     <div>
         <img src="pictures/giphy.gif" class="cover" width="600"/>
     </div>
 </section>
 
-<section class="slide">
+<section class="slide white">
     <h2>Как настроить git lfs</h2>
     <ul>
         <li>>$ git lfs install</li>
@@ -312,11 +314,11 @@
     </ul>
 </section>
 
-<section class="slide">
+<section class="slide white">
     <img src="pictures/git_screenshot.png" class="cover"/>
 </section>
 
-<section class="slide">
+<section class="slide white">
     <h2>Ссылки</h2>
     <ul>
         <li><a target="_blank" href="https://github.com/gemini-testing/gemini">gemini-testing/gemini</a></li>
