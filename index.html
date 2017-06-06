@@ -17,7 +17,7 @@
 <section class="slide black" id="cover">
     <h2>Тестируем с <span style="color: #ff0000">g</span>emini</h2>
     <figure>
-        <img class="cover" src="pictures/cover.jpg" alt="Cover">
+        <img class="cover" src="pictures/cover_2.gif" alt="Cover">
     </figure>
     <style>
         #cover h2 {
@@ -57,15 +57,15 @@
 </section>
 
 <section class="slide white">
+    <img class="cover place width top" src="pictures/Создание%20сотрудника%202.png">
+</section>
+
+<section class="slide white">
     <img class="cover place width top" src="pictures/ИД%202.png">
 </section>
 
 <section class="slide white">
     <img class="cover place width top" src="pictures/Новый%20ТД.png">
-</section>
-
-<section class="slide white">
-    <img class="cover place width top" src="pictures/Создание%20сотрудника%202.png">
 </section>
 
 <section class="slide white">
@@ -111,7 +111,7 @@
 </section>
 
 <section class="slide white">
-    <h2>Инструменты</h2>
+    <h2>🔨 Инструменты</h2>
     <ul>
         <li><a target="_blank" href="https://translate.google.com/?hl=ru#auto/ru/Hands%20and%20eyes">Eyes</a>
         </li>
@@ -268,6 +268,21 @@
     </pre>
 </section>
 
+
+<section class="slide white">
+    <h2>Пример теста множеста страниц</h2>
+    <pre>
+        <code>const urls = <mark>[ "/", "/products", "/support" ];</mark></code>
+        <code>urls.forEach((url, i) =></code>
+        <code>  gemini.suite(`suite-${i}`, suite =></code>
+        <code>    suite.setUrl(url)</code>
+        <code>      .setCaptureElements("#root")</code>
+        <code>      .capture('plain')</code>
+        <code>    )</code>
+        <code>)</code>
+    </pre>
+</section>
+
 <section class="slide white">
     <img src="pictures/gos_example_2.jpg" class="cover width"/>
 </section>
@@ -330,8 +345,8 @@
         <li><a target="_blank" href="https://gist.github.com/cvrebert/adf91e429906a4d746cd">Другие инструменты CSS
             Regression
             Testing</a></li>
-        <li><a target="_blank" href="https://github.com/mshatikhin/gemini-react-starter">github.com/mshatikhin/gemini-react-starter</a>
-        </li>
+        <li><a target="_blank" href="https://github.com/mshatikhin/gemini-example">github.com/mshatikhin/gemini-example</a></li>
+        <li><a target="_blank" href="https://github.com/mshatikhin/gemini-react-starter">github.com/mshatikhin/gemini-react-starter</a></li>
     </ul>
 </section>
 
