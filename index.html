@@ -88,7 +88,8 @@
 <section class="slide black">
     <h2>Проблемы</h2>
     <ul>
-        <li>Изменяя один редактор можно поламать остальные</li>
+        <li>Бэкенд генерирует формы</li>
+        <li>Изменяя один редактор можно поломать остальные</li>
         <li>Соответствие прототипам после рефакторинга</li>
         <li>Много рутины</li>
         <li>После обновления <a href="https://github.com/skbkontur/retail-ui">retail-ui</a> быть спокойнее</li>
@@ -111,19 +112,7 @@
 </section>
 
 <section class="slide black">
-    <h2>Пишем тесты</h2>
-    <ul>
-        <li>e2e <code>(nigthwatch)</code></li>
-        <li>css/style <code>(gemini)</code></li>
-        <li>integration <code>(jest, enzyme)</code></li>
-        <li>unit <code>(jest)</code></li>
-        <li>structure <code>(jest snapshot)</code></li>
-        <li>type checking <code>(typescript)</code></li>
-    </ul>
-</section>
-
-<section class="slide black">
-    <h2>Тестируем верстку</h2>
+    <h2>Тестируем верстку скриншотами</h2>
     <ul>
         <li>Делаем скриншоты компонентов в разных состояних</li>
         <li class="next">Сравниваем между собой автоматически</li>
@@ -308,11 +297,23 @@
 </section>
 
 <section class="slide black">
+    <img src="pictures/gos_example_3_1.jpg" class="cover width"/>
+</section>
+
+<section class="slide black">
     <h2>Профит использования css/style тестирования</h2>
     <ul>
         <li>Меньше боли при рефакторинге</li>
         <li>Оперативно видим что сломалось</li>
         <li>Больше времени на разработку*</li>
+    </ul>
+</section>
+
+<section class="slide black">
+    <h2>Скриншотное тестирование в Контуре</h2>
+    <ul>
+        <li>Скриншотят 6 команд</li>
+        <li>Gemini используют 2 команды</li>
     </ul>
 </section>
 
@@ -334,8 +335,6 @@
         </li>
         <li><a target="_blank" href="https://getstorybook.io/docs/react-storybook/testing/css-style-testing">getstorybook.io/docs/react-storybook</a>
         </li>
-        <li><a target="_blank" href="https://events.yandex.ru/lib/talks/4262/">Gemini: различные способы
-            использования</a></li>
         <li><a target="_blank" href="https://gist.github.com/cvrebert/adf91e429906a4d746cd">Другие инструменты CSS
             Regression
             Testing</a></li>
